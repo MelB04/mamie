@@ -23,7 +23,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							{% for cafe in cafes |sort((a, b) => a.nom <=> b.nom) %}
+							{% for cafe in cafes |sort((a, b) => a.prix <=> b.prix) %}
 								<tr class="{{ cycle(['table-primary', 'table-secondary'], loop.index0) }}">
 									<td>{{ cafe.nom | capitalize }}</td>
 									<td>{{ cafe.prix }}€</td>
